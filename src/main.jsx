@@ -9,12 +9,24 @@ import {
 } from "react-router-dom";
 import Root from './Compontents/Root/Root.jsx';
 import ErrorPage from './Compontents/ErrorPage/ErrorPage.jsx';
+import Home from './Compontents/Home/Home.jsx';
+import Dashboard from './Compontents/Dashboard/Dashboard.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>
+    errorElement:<ErrorPage></ErrorPage>,
+    children:[
+      {
+        path:'/',
+        element:<Home></Home>
+      },
+      {
+        path:'dashboard',
+        element:<Dashboard></Dashboard>
+      }
+    ]
   },
 ]);
 
