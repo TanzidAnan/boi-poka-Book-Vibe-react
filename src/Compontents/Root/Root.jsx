@@ -1,8 +1,13 @@
+import { Outlet } from "react-router-dom";
+import Footer from "../Footer/Footer";
+import NevBar from "../NevBar/NevBar";
 
 const Root = () => {
     return (
         <div>
-            <h1>Hello form Root </h1>
+            <NevBar></NevBar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
