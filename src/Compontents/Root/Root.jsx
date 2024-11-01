@@ -4,7 +4,7 @@ import NevBar from "../NevBar/NevBar";
 
 const Root = () => {
     return (
-        <div>
+        <div className="max-w-6xl mx-auto">
             <NevBar></NevBar>
             <Outlet></Outlet>
             <Footer></Footer>
