@@ -1,48 +1,48 @@
-const getStroedReadList = () =>{
-    const strodListStr =localStorage.getItem('read-list');
-    if(strodListStr){
-        const strodList =JSON.parse(strodListStr)
+const getStroedReadList = () => {
+    const strodListStr = localStorage.getItem('read-list');
+    if (strodListStr) {
+        const strodList = JSON.parse(strodListStr)
         return strodList
     }
-    else{
+    else {
         return [];
     }
 }
 
 
-const AddToStoredReadList =(id) =>{
-    const storedList =getStroedReadList();
-    if(storedList.includes(id)){
-        console.log(id,'all redy added')
+const AddToStoredReadList = (id) => {
+    const storedList = getStroedReadList();
+    if (storedList.includes(id)) {
+        console.log(id, 'all redy added')
     }
-    else{
+    else {
         storedList.push(id);
-        const strodListStr =JSON.stringify(storedList);
-        localStorage.setItem('read-list',strodListStr)
+        const strodListStr = JSON.stringify(storedList);
+        localStorage.setItem('read-list', strodListStr)
     }
 }
 
-const getStrodeToWishList = () =>{
+const getStrodeToWishList = () => {
     const strogeAddStr = localStorage.getItem('wish-list');
-    if(strogeAddStr){
-        const sreogeAdd =JSON.parse(strogeAddStr);
+    if (strogeAddStr) {
+        const sreogeAdd = JSON.parse(strogeAddStr);
         return sreogeAdd;
     }
-    else{
+    else {
         return [];
     }
 }
 
-const WishListAddToDataStroge =(id) =>{
-    const WishListStrog =getStrodeToWishList();
-    if(WishListStrog.includes(id)){
-        console.log(id,'Add getStrodeToWishList')
+const WishListAddToDataStroge = (id) => {
+    const WishListStrog = getStrodeToWishList();
+    if (WishListStrog.includes(id)) {
+        console.log(id, 'Add getStrodeToWishList')
     }
-    else{
+    else {
         WishListStrog.push(id);
-        const strogeAddStr =JSON.stringify(WishListStrog);
-        localStorage.setItem('wish-list',strogeAddStr);
+        const strogeAddStr = JSON.stringify(WishListStrog);
+        localStorage.setItem('wish-list', strogeAddStr);
     }
 }
 
-export {AddToStoredReadList,WishListAddToDataStroge}
+export { AddToStoredReadList, WishListAddToDataStroge, getStroedReadList }
