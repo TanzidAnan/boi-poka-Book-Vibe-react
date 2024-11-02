@@ -7,7 +7,7 @@ const BookDetles = () => {
 
     const book = data.find(book => book.bookId === id);
     const hendleMarkAsReed =() =>{
-
+        console.log(95454544)
     }
 
     return (
