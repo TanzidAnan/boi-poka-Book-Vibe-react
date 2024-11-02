@@ -49,7 +49,7 @@ const BookDetles = () => {
                         </div>
                         <div className="flex gap-9 mt-6">
                             <button onClick={() =>hendleMarkAsReed(bookId)} class="btn btn-active btn-accent">Read</button>
-                            <button onClick={() =>hendleAddToWishList(id)} className="btn btn-outline">Wishlist</button>
+                            <button onClick={() =>hendleAddToWishList(bookId)} className="btn btn-outline">Wishlist</button>
 
                         </div>
                     </div>
