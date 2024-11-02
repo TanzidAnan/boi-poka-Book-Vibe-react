@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { AddToStoredReadList } from "../../Utility/AddToDb";
+import { AddToStoredReadList, WishListAddToDataStroge } from "../../Utility/AddToDb";
 
 const BookDetles = () => {
     const { bookId, bookName, author, image, review, totalPages, rating, category, publisher, yearOfPublishing, tags } = useParams();
@@ -9,6 +9,9 @@ const BookDetles = () => {
     const book = data.find(book => book.bookId === id);
     const hendleMarkAsReed =(id) =>{
         AddToStoredReadList(id)
+    }
+    const hendleAddToWishList = (id) =>{
+        WishListAddToDataStroge(id)
     }
 
     return (
@@ -46,7 +49,7 @@ const BookDetles = () => {
                         </div>
                         <div className="flex gap-9 mt-6">
                             <button onClick={() =>hendleMarkAsReed(bookId)} class="btn btn-active btn-accent">Read</button>
-                            <button className="btn btn-outline">Wishlist</button>
+                            <button onClick={() =>hendleAddToWishList(bookId)} className="btn btn-outline">Wishlist</button>
 
                         </div>
                     </div>

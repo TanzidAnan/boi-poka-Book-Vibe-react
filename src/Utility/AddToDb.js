@@ -22,4 +22,27 @@ const AddToStoredReadList =(id) =>{
     }
 }
 
-export {AddToStoredReadList}
+const getStrodeToWishList = () =>{
+    const strogeAddStr = localStorage.getItem('wish-list');
+    if(strogeAddStr){
+        const sreogeAdd =JSON.parse(strogeAddStr);
+        return sreogeAdd;
+    }
+    else{
+        return [];
+    }
+}
+
+const WishListAddToDataStroge =(id) =>{
+    const WishListStrog =getStrodeToWishList();
+    if(WishListStrog.includes(id)){
+        console.log(id,'Add getStrodeToWishList')
+    }
+    else{
+        WishListStrog.push(id);
+        const strogeAddStr =JSON.stringify(WishListStrog);
+        localStorage.setItem('wish-list',strogeAddStr);
+    }
+}
+
+export {AddToStoredReadList,WishListAddToDataStroge}
