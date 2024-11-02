@@ -3,20 +3,20 @@ import 'react-tabs/style/react-tabs.css';
 
 const ListedBooks = () => {
     return (
-        <div>
+        <div className='text-start'>
             <h3 className="text-3xl my-8">List Books</h3>
 
             <Tabs>
                 <TabList>
-                    <Tab>Title 1</Tab>
-                    <Tab>Title 2</Tab>
+                    <Tab>Read List</Tab>
+                    <Tab>Wish List</Tab>
                 </TabList>
 
                 <TabPanel>
-                    <h2>Any content 1</h2>
+                    <h2 className='text-2xl'>Book I read</h2>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 2</h2>
+                    <h2 className='text-2xl'>my wish list</h2>
                 </TabPanel>
             </Tabs>
 
