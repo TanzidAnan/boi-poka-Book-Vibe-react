@@ -32,7 +32,7 @@ const BookDetles = () => {
                         </div>
                         <div className="flex gap-9">
                             <p>Number of Pages:</p>
-                            <p>{book.totalPages}</p>
+                            <p className="font-bold">{book.totalPages}</p>
                         </div>
                         <div className="flex gap-9">
                             <p>Publisher:</p>
@@ -40,7 +40,7 @@ const BookDetles = () => {
                         </div>
                         <div className="flex gap-9">
                             <p>Year of Publishing:</p>
-                            <p>{book.yearOfPublishing}</p>
+                            <p className="font-bold">{book.yearOfPublishing}</p>
                         </div>
                         <div className="flex gap-9 mt-6">
                             <button class="btn btn-active btn-accent">Read</button>
