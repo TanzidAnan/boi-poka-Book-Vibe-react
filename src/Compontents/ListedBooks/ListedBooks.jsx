@@ -28,7 +28,7 @@ const ListedBooks = () => {
 
                 <TabPanel>
                     <h2 className='text-2xl'>Book I read: {readList.length}</h2>
-                    <div className='grid grid-cols-3 gap-7'>
+                    <div className='grid grid-cols-3 gap-16'>
                         {
                             readList.map((book,idx) => <Book key={idx} book={book}></Book>)
                         }
