@@ -25,7 +25,7 @@ const BookDetles = () => {
                         <p>{book.category}</p>
                         <hr />
                         <p className="mt-4">{book.review}</p>
-                        <div className="flex gap-3">
+                        <div className="flex gap-3 mb-4">
                             {
                                 book.tags.map(tag => <button className="flex btn btn-xs bg-green-300 text-green-900">#{tag}</button>)
                             }
@@ -42,7 +42,7 @@ const BookDetles = () => {
                             <p>Year of Publishing:</p>
                             <p>{book.yearOfPublishing}</p>
                         </div>
-                        <div>
+                        <div className="flex gap-9 mt-6">
                             <button class="btn btn-active btn-accent">Read</button>
                             <button className="btn btn-outline">Wishlist</button>
 
