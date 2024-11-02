@@ -6,8 +6,9 @@ const BookDetles = () => {
     const data = useLoaderData();
 
     const book = data.find(book => book.bookId === id);
-    console.log(book);
-    console.log(data)
+    const hendleMarkAsReed =() =>{
+
+    }
 
     return (
         <div>
@@ -43,7 +44,7 @@ const BookDetles = () => {
                             <p className="font-bold">:{book.yearOfPublishing}</p>
                         </div>
                         <div className="flex gap-9 mt-6">
-                            <button class="btn btn-active btn-accent">Read</button>
+                            <button onClick={hendleMarkAsReed} class="btn btn-active btn-accent">Read</button>
                             <button className="btn btn-outline">Wishlist</button>
 
                         </div>
