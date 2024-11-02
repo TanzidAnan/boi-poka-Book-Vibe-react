@@ -32,7 +32,7 @@ const BookDetles = () => {
                         <p className="mt-4">{book.review}</p>
                         <div className="flex gap-3 mb-4">
                             {
-                                book.tags.map(tag => <button className="flex btn btn-xs bg-green-300 text-green-900">#{tag}</button>)
+                                book.tags.map((tag,idx) => <button key={idx} className="flex btn btn-xs bg-green-300 text-green-900">#{tag}</button>)
                             }
                         </div>
                         <div className="flex gap-9">
