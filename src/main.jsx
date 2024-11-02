@@ -11,6 +11,7 @@ import Root from './Compontents/Root/Root.jsx';
 import ErrorPage from './Compontents/ErrorPage/ErrorPage.jsx';
 import Home from './Compontents/Home/Home.jsx';
 import Dashboard from './Compontents/Dashboard/Dashboard.jsx';
+import BookDetles from './Compontents/BookDetles/BookDetles.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>
+      },
+      {
+        path:'/books/:bookId',
+        element:<BookDetles></BookDetles>
       },
       {
         path:'dashboard',
