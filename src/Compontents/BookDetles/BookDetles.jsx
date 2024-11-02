@@ -36,7 +36,7 @@ const BookDetles = () => {
                         </div>
                         <div className="flex gap-9">
                             <p>Publisher:</p>
-                            <p>{book.publisher}</p>
+                            <p className="ml-14">{book.publisher}</p>
                         </div>
                         <div className="flex gap-9">
                             <p>Year of Publishing:</p>
