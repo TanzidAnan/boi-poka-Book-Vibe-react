@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Book = ({ book }) => {
-    console.log(book);
     const { bookId,image, bookName, author, tags, category } = book
     return (
         <Link to={`books/${bookId}`}>
@@ -16,7 +15,7 @@ const Book = ({ book }) => {
                 <div className="card-body">
                     <div className='flex justify-center gap-5'>
                         {
-                            tags.map(tag => <button className='btn btn-xs bg-green-200 text-green-900'>{tag}</button>)
+                            tags.map((tag,idx) => <button key={idx} className='btn btn-xs bg-green-200 text-green-900'>{tag}</button>)
                         }
                     </div>
                     <h1 className='text-lg font-bold text-start mt-2'>{bookName}</h1>
