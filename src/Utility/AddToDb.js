@@ -14,7 +14,7 @@ const getStroedReadList = () => {
 
 const AddToStoredReadList = (id) => {
     const storedList = getStroedReadList();
-    if (storedList.includes(id)) {
+    if (storedList.includes(id) ===product_id) {
         console.log(id, 'all redy added')
     }
     else {
