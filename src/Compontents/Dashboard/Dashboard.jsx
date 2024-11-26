@@ -1,5 +1,8 @@
+import { useLoaderData } from "react-router-dom";
 
 const Dashboard = () => {
+    const allData =useLoaderData();
+    console.log(allData)
     return (
         <div>
             <Helmet>
