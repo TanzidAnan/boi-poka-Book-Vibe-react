@@ -6,16 +6,16 @@ const Dashboard = () => {
     const allData =useLoaderData();
     console.log(allData)
     const strogeData =getStrodeToWishList();
-    console.log(parseFloat(strogeData))
+    
   
-    const filterData =allData.includes(data => data.bookId == strogeData)
+    const filterData =allData.filter(data => data.bookId == strogeData)
     console.log(filterData)
     return (
         <div>
             <Helmet>
                 <title>Boi Poka | Dashbord</title>
             </Helmet>
-            <h2 className="text-2xl">Dashboard</h2>
+            <h2 className="text-2xl">Dashboard {filterData.length}</h2>
         </div>
     );
 };
