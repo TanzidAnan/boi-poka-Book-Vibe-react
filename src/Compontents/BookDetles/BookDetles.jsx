@@ -16,6 +16,7 @@ const BookDetles = () => {
 
     return (
         <div>
+            
             <div className="hero bg-base-200 min-h-screen">
                 <div className="hero-content flex justify-center">
                     <div className="w-[50%] justify-center flex items-center">
