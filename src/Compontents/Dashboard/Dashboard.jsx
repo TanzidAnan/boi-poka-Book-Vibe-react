@@ -6,7 +6,7 @@ const Dashboard = () => {
     const allData =useLoaderData();
     console.log(allData)
     const strogeData =getStrodeToWishList();
-    console.log(strogeData)
+    console.log(parseFloat(strogeData))
   
     const filterData =allData.filter(data => data.bookId == parseInt(strogeData))
     console.log(filterData)
