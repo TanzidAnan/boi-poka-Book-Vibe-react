@@ -48,4 +48,4 @@ const WishListAddToDataStroge = (id) => {
     }
 }
 
-export { AddToStoredReadList, WishListAddToDataStroge, getStroedReadList }
+export { AddToStoredReadList, WishListAddToDataStroge, getStroedReadList,getStrodeToWishList }

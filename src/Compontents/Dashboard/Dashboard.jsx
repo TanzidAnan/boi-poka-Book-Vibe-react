@@ -1,12 +1,15 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
-import { getStroedReadList } from "../../Utility/AddToDb";
+import { getStrodeToWishList } from "../../Utility/AddToDb";
 
 const Dashboard = () => {
     const allData =useLoaderData();
     console.log(allData)
-    const strogeData =getStroedReadList();
-    console.log(strogeData)
+    const strogeData =getStrodeToWishList();
+    const id =parseInt(strogeData);
+    console.log(id)
+    const filterData =allData.filter(data => data.id == id)
+    console.log(filterData)
     return (
         <div>
             <Helmet>
