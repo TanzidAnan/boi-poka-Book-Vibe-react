@@ -13,7 +13,7 @@ const Dashboard = () => {
     return (
         <div>
             <Helmet>
-                <title>Boi Poka | Dashboard</title>
+                <title>Boi Poka | Dashbord</title>
             </Helmet>
             <h2 className="text-2xl">Dashboard</h2>
         </div>
