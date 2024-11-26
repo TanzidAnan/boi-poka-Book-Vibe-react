@@ -3,6 +3,8 @@ import { AddToStoredReadList, WishListAddToDataStroge } from "../../Utility/AddT
 
 const BookDetles = () => {
     const { bookId, bookName, author, image, review, totalPages, rating, category, publisher, yearOfPublishing, tags } = useParams();
+   
+
     const id = parseInt(bookId)
     const data = useLoaderData();
 
