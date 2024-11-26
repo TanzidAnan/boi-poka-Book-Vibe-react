@@ -8,7 +8,7 @@ const Dashboard = () => {
     const strogeData =getStrodeToWishList();
     console.log(parseFloat(strogeData))
   
-    const filterData =allData.includes(data => data.bookId == strogeData)
+    const filterData =allData.includes(data => data.bookId == strogeDataf)
     console.log(filterData)
     return (
         <div>
